@@ -1,0 +1,258 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Archive — Dossier Scellé</title>
+  <meta name="description" content="Page de fiction pour tournage : dossier d’archive, symboles, notes, preuves visuelles." />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="seal" aria-hidden="true">⟡</div>
+      <div class="brand-text">
+        <div class="kicker">DÉPÔT D’ARCHIVES — DOSSIER SCELLÉ</div>
+        <div class="title">INCIDENT : “SYMBOLE INVERSÉ”</div>
+      </div>
+    </div>
+
+    <div class="tools">
+      <button id="btnAmbient" class="btn" type="button" aria-pressed="true">
+        Ambiance : <span class="btnValue" id="ambientState">ON</span>
+      </button>
+      <button id="btnRedact" class="btn" type="button" aria-pressed="false">
+        Mode censure : <span class="btnValue" id="redactState">OFF</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="badge">Fiction — Document de plateau</p>
+        <h1>Rapport d’archive (univers fictif)</h1>
+        <p class="lead">
+          Ce site est un <strong>prop</strong> pour tournage. Il présente un symbole inversé comme un élément
+          <span class="redactable">inquiétant</span> et <span class="redactable">nocif</span> dans un scénario.
+          Les contenus sont <strong>inventés</strong> et ne décrivent aucune pratique réelle.
+        </p>
+
+        <div class="meta">
+          <div class="meta-item">
+            <div class="meta-k">Niveau d’accès</div>
+            <div class="meta-v">OMEGA / 4</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-k">État du dossier</div>
+            <div class="meta-v">SCELLÉ — Lecture surveillée</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-k">Dernière mise à jour</div>
+            <div class="meta-v"><span id="stamp">—</span></div>
+          </div>
+        </div>
+
+        <div class="callouts">
+          <div class="callout">
+            <div class="callout-title">Avertissement</div>
+            <p class="callout-text">
+              Texte volontairement “sérieux” pour l’image. Aucune instruction, aucun rituel, aucun contenu authentique.
+            </p>
+          </div>
+          <div class="callout">
+            <div class="callout-title">Images</div>
+            <p class="callout-text">
+              Les cadres à droite attendent tes images IA dans le dossier <code>images/</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <figure class="img-slot">
+          <div class="img-frame">
+            <img src="images/visuel-01.jpg" alt="Preuve visuelle 01 (à remplacer)"
+                 onerror="this.closest('.img-frame').classList.add('missing')" />
+            <div class="img-missing">
+              <div class="missing-title">Image manquante</div>
+              <div class="missing-sub">images/visuel-01.jpg</div>
+            </div>
+          </div>
+          <figcaption>Preuve visuelle 01 — “Objet principal”</figcaption>
+        </figure>
+
+        <figure class="img-slot">
+          <div class="img-frame">
+            <img src="images/visuel-02.jpg" alt="Preuve visuelle 02 (à remplacer)"
+                 onerror="this.closest('.img-frame').classList.add('missing')" />
+            <div class="img-missing">
+              <div class="missing-title">Image manquante</div>
+              <div class="missing-sub">images/visuel-02.jpg</div>
+            </div>
+          </div>
+          <figcaption>Preuve visuelle 02 — “Traces / environnement”</figcaption>
+        </figure>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <header class="card-h">
+          <h2>Résumé</h2>
+          <div class="tag">Synthèse</div>
+        </header>
+        <div class="card-b">
+          <p>
+            (Fiction) Un symbole inversé, intégré à un décor, est associé à des effets narratifs :
+            <span class="redactable">malaise</span>, <span class="redactable">silences anormaux</span>,
+            <span class="redactable">interférences sonores</span>, et pertes de repères.
+          </p>
+          <ul class="list">
+            <li><span class="dot"></span> Variation de perception : <span class="redactable">froid</span> / <span class="redactable">lumière dure</span></li>
+            <li><span class="dot"></span> Comportements : <span class="redactable">répétitions</span> / <span class="redactable">phrases incomplètes</span></li>
+            <li><span class="dot"></span> Enregistrements : <span class="redactable">parasites</span> / <span class="redactable">coupures</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-h">
+          <h2>Transcriptions “bande retrouvée”</h2>
+          <div class="tag">Fiction</div>
+        </header>
+        <div class="card-b">
+          <p class="small muted">
+            Ces lignes sont des fragments “cinéma” (gibberish contrôlé), sans latin/grec réel et sans contenu opératoire.
+          </p>
+
+          <div class="incantation" data-scramble>
+            <div class="inc-title">Fragment A</div>
+            <pre class="inc-text">…le symbole n’est pas un signe, c’est une absence.
+…la pièce “écoute”. Les ombres restent trop longues.
+…ne regarde pas le reflet, regarde ce qui manque.</pre>
+          </div>
+
+          <div class="incantation" data-scramble>
+            <div class="inc-title">Fragment B</div>
+            <pre class="inc-text">…on a fermé la porte, mais le son est resté dehors.
+…les mains tremblent, comme si le bois respirait.
+…si tu lis ceci : coupe la caméra. Maintenant.</pre>
+          </div>
+
+          <div class="actions">
+            <button class="btn btnWide" id="btnScramble" type="button">Effet “bande abîmée”</button>
+            <button class="btn btnWide" id="btnCopy" type="button">Copier le fragment</button>
+          </div>
+
+          <p class="small muted" id="copyHint" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-h">
+          <h2>Galerie</h2>
+          <div class="tag">À remplir</div>
+        </header>
+        <div class="card-b">
+          <div class="gallery">
+            <figure class="thumb">
+              <div class="img-frame small">
+                <img src="images/detail-01.jpg" alt="Détail 01 (à remplacer)"
+                     onerror="this.closest('.img-frame').classList.add('missing')" />
+                <div class="img-missing">
+                  <div class="missing-title">Image manquante</div>
+                  <div class="missing-sub">images/detail-01.jpg</div>
+                </div>
+              </div>
+              <figcaption>Détail 01</figcaption>
+            </figure>
+
+            <figure class="thumb">
+              <div class="img-frame small">
+                <img src="images/detail-02.jpg" alt="Détail 02 (à remplacer)"
+                     onerror="this.closest('.img-frame').classList.add('missing')" />
+                <div class="img-missing">
+                  <div class="missing-title">Image manquante</div>
+                  <div class="missing-sub">images/detail-02.jpg</div>
+                </div>
+              </div>
+              <figcaption>Détail 02</figcaption>
+            </figure>
+
+            <figure class="thumb">
+              <div class="img-frame small">
+                <img src="images/detail-03.jpg" alt="Détail 03 (à remplacer)"
+                     onerror="this.closest('.img-frame').classList.add('missing')" />
+                <div class="img-missing">
+                  <div class="missing-title">Image manquante</div>
+                  <div class="missing-sub">images/detail-03.jpg</div>
+                </div>
+              </div>
+              <figcaption>Détail 03</figcaption>
+            </figure>
+
+            <figure class="thumb">
+              <div class="img-frame small">
+                <img src="images/detail-04.jpg" alt="Détail 04 (à remplacer)"
+                     onerror="this.closest('.img-frame').classList.add('missing')" />
+                <div class="img-missing">
+                  <div class="missing-title">Image manquante</div>
+                  <div class="missing-sub">images/detail-04.jpg</div>
+                </div>
+              </div>
+              <figcaption>Détail 04</figcaption>
+            </figure>
+          </div>
+
+          <div class="note">
+            <div class="note-title">Conseil GitHub</div>
+            <p class="note-text">
+              Mets tes images dans <code>images/</code> et garde les noms, ou modifie les <code>src</code>.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-h">
+          <h2>Chronologie</h2>
+          <div class="tag">Rapport</div>
+        </header>
+        <div class="card-b">
+          <ol class="timeline">
+            <li>
+              <div class="t-time">T-00:14</div>
+              <div class="t-body"><strong>Mise en place</strong> : l’objet est positionné près d’une surface réfléchissante.</div>
+            </li>
+            <li>
+              <div class="t-time">T-00:07</div>
+              <div class="t-body"><strong>Parasites</strong> : souffle bas et régulier sur la prise son.</div>
+            </li>
+            <li>
+              <div class="t-time">T+00:02</div>
+              <div class="t-body"><strong>Chute de contraste</strong> : image plus “plate”, sensation de froid narratif.</div>
+            </li>
+            <li>
+              <div class="t-time">T+00:11</div>
+              <div class="t-body"><strong>Incident</strong> : arrêt du moniteur, reprise avec artifacts.</div>
+            </li>
+          </ol>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="foot-left">Dossier de fiction — usage plateau</div>
+      <div class="foot-right">© <span id="year"></span> / “Archive Scellée”</div>
+    </footer>
+  </main>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
